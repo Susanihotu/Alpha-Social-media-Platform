@@ -1,0 +1,3 @@
+[submodule "Social Media/lib/forge-std"]
+	path = Social Media/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
