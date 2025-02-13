@@ -1,17 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.27;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "./SocialToken.sol";
 
-contract SocialToken is ERC20 {
-    constructor() ERC20("SocialToken", "SCT") {
-        _mint(msg.sender, 1000000 * 10**decimals());  // Initial supply for the contract owner
-    }
-
-    function mint(address to, uint256 amount) external {
-        _mint(to, amount);
-    }
-}
 
 contract DecentralizedSocialMedia {
     struct UserProfile {
